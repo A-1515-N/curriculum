@@ -1,0 +1,49 @@
+body{
+    min-height: 100%;
+    /* 上記【100パーセントより小さくならない】という意味 */
+    height: 100%;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wrapper{
+    width: 400px;
+    margin: 0 auto;
+    /* 上記は【要素を中央に寄せる】処理 */
+}
+
+.header{
+    height: 100px;
+    background-color: #141f40;
+}
+
+.left{
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+    float: left;
+}
+
+.right{
+    width: 250px;
+    height: 250px;
+    background-color: #8c2727;
+    float: right;
+}
+
+.footer{
+    height: 100px;
+    background-color: #d98d30;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 上記は リセットCSS */
+
+
